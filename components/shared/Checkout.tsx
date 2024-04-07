@@ -30,7 +30,7 @@ const Checkout = ({event , userId} :{event : IEvent ,userId :string}) => {
             eventId :event._id,
             price: event.price,
             isFree : event.isFree,
-            buyerId:userId
+            buyerId : userId
         }
 
         await checkoutOrder(order);
